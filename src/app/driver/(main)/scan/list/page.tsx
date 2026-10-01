@@ -54,7 +54,7 @@ export default function ScanListPage() {
 
       {/* Bottom Optimization Box */}
       <div className="fixed bottom-0 left-0 right-0 max-w-[480px] mx-auto bg-white p-4 border-t border-gray-100 shadow-[0_-10px_20px_rgba(0,0,0,0.03)] z-20" style={{ position: 'fixed', bottom: 0, left: 0, right: 0, maxWidth: '480px', margin: '0 auto', backgroundColor: 'white', padding: '16px', borderTop: '1px solid #f3f4f6', boxShadow: '0 -10px 20px rgba(0,0,0,0.03)', zIndex: 20 }}>
-        <div className="bg-primary/5 rounded-2xl p-4 mb-4 border border-primary/20" style={{ backgroundColor: 'rgba(4, 167, 108, 0.05)', borderRadius: '16px', padding: '16px', marginBottom: '16px', border: '1px solid rgba(4, 167, 108, 0.2)' }}>
+        <div className="bg-primary/5 rounded-2xl p-4 mb-4 border border-primary/20" style={{ backgroundColor: 'rgba(47, 128, 255, 0.05)', borderRadius: '16px', padding: '16px', marginBottom: '16px', border: '1px solid rgba(47, 128, 255, 0.2)' }}>
           <div className="flex items-center text-primary font-bold mb-1" style={{ display: 'flex', alignItems: 'center', color: 'var(--color-primary)', fontWeight: 'bold', marginBottom: '4px' }}>
             <Sparkles size={18} className="mr-2" style={{ marginRight: '8px' }} />
             Tối ưu tuyến
@@ -65,7 +65,7 @@ export default function ScanListPage() {
         <button 
           onClick={() => router.push('/driver/scan/optimizing')}
           className="w-full py-3.5 px-4 rounded-xl bg-primary text-white font-bold text-lg flex items-center justify-center shadow-lg shadow-primary/30 active:scale-[0.98] transition-transform"
-          style={{ width: '100%', padding: '14px 16px', borderRadius: '12px', backgroundColor: 'var(--color-primary)', color: 'white', fontWeight: 'bold', fontSize: '1.125rem', display: 'flex', alignItems: 'center', justifyContent: 'center', border: 'none', boxShadow: '0 10px 15px -3px rgba(4, 167, 108, 0.3)' }}
+          style={{ width: '100%', padding: '14px 16px', borderRadius: '12px', backgroundColor: 'var(--color-primary)', color: 'white', fontWeight: 'bold', fontSize: '1.125rem', display: 'flex', alignItems: 'center', justifyContent: 'center', border: 'none', boxShadow: '0 10px 15px -3px rgba(47, 128, 255, 0.3)' }}
         >
           Tối ưu ngay
         </button>

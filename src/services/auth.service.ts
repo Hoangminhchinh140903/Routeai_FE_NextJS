@@ -1,4 +1,5 @@
-export const BASE_URL = process.env.NEXT_PUBLIC_API_URL ?? 'https://next.tviq.me';
+// Mock mode: use local API routes (empty base = same origin)
+export const BASE_URL = '';
 
 // Types
 export interface RegisterPayload {

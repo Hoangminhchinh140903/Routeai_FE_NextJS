@@ -100,7 +100,7 @@ export default function WeatherInfoPage() {
             <div className="flex flex-col items-center bg-blue-50 px-3 py-2 rounded-xl" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', backgroundColor: '#eff6ff', padding: '8px 12px', borderRadius: '12px' }}>
               <span className="text-blue-500 font-bold text-sm mb-2" style={{ color: '#3b82f6', fontWeight: 'bold', fontSize: '0.875rem', marginBottom: '8px' }}>11h</span>
               <CloudRain size={24} className="text-blue-400 mb-2" style={{ color: '#60a5fa', marginBottom: '8px' }} />
-              <span className="font-bold text-blue-600" style={{ fontWeight: 'bold', color: '#2563eb' }}>30°</span>
+              <span className="font-bold text-blue-600" style={{ fontWeight: 'bold', color: '#2F80FF' }}>30°</span>
             </div>
             <div className="flex flex-col items-center" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
               <span className="text-gray-500 text-sm mb-2" style={{ color: '#6b7280', fontSize: '0.875rem', marginBottom: '8px' }}>12h</span>

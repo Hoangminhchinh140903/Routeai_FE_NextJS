@@ -27,7 +27,7 @@ export default function DriverMainLayout({
         </Link>
         
         <div style={{ position: 'relative', top: '-15px' }}>
-          <Link href="/driver/scan" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '56px', height: '56px', borderRadius: '50%', backgroundColor: 'var(--color-primary)', color: 'white', boxShadow: '0 4px 10px rgba(4, 167, 108, 0.4)', textDecoration: 'none' }}>
+          <Link href="/driver/scan" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '56px', height: '56px', borderRadius: '50%', backgroundColor: 'var(--color-primary)', color: 'white', boxShadow: '0 4px 10px rgba(47, 128, 255, 0.4)', textDecoration: 'none' }}>
             <ScanLine size={28} />
           </Link>
           <div style={{ textAlign: 'center', fontSize: '0.65rem', marginTop: '4px', color: 'var(--color-primary)', fontWeight: 600 }}>Quét đơn</div>

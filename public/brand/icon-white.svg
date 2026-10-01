@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 150" fill="none">
+  <!-- R:t Icon — Dynamic R with Destination Dot & Smart Route Bar (Dark mode) -->
+  <g transform="skewX(-8)">
+    <path d="M14 25 H36 V135 H14 Z" fill="#FFFFFF"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M36 25 H57 C78.5 25 89 36.5 89 52.5 C89 68.5 78.5 80 57 80 H36 V59.5 H55.5 C61.5 59.5 65 56.8 65 52.5 C65 48.2 61.5 45.5 55.5 45.5 H36 Z" fill="#FFFFFF"/>
+    <path d="M36 80 H58 L88 135 H61 Z" fill="#FFFFFF"/>
+    <path d="M45.5 88 H57.5 L75 127 H63 Z" fill="#2F80FF"/>
+  </g>
+  <circle cx="97" cy="11" r="8.5" fill="#2F80FF"/>
+</svg>

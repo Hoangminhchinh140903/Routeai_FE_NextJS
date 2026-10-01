@@ -21,7 +21,7 @@ export default function DetailedReportPage() {
         {/* Month Filter */}
         <div className="flex justify-between items-center" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <h2 className="text-xl font-bold text-gray-800" style={{ fontSize: '1.25rem', fontWeight: 'bold', color: '#1f2937', margin: 0 }}>Tháng 5/2024</h2>
-          <button className="flex items-center text-primary font-medium bg-primary/10 px-3 py-1.5 rounded-lg" style={{ display: 'flex', alignItems: 'center', color: 'var(--color-primary)', fontWeight: 500, backgroundColor: 'rgba(4, 167, 108, 0.1)', padding: '6px 12px', borderRadius: '8px', border: 'none' }}>
+          <button className="flex items-center text-primary font-medium bg-primary/10 px-3 py-1.5 rounded-lg" style={{ display: 'flex', alignItems: 'center', color: 'var(--color-primary)', fontWeight: 500, backgroundColor: 'rgba(47, 128, 255, 0.1)', padding: '6px 12px', borderRadius: '8px', border: 'none' }}>
             Tháng này <ChevronDown size={16} className="ml-1" style={{ marginLeft: '4px' }} />
           </button>
         </div>

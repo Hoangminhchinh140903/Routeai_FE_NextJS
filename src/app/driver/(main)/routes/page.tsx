@@ -63,7 +63,7 @@ export default function SavedRoutesPage() {
         <button 
           onClick={() => router.push('/driver/scan')}
           className="w-full py-4 px-4 rounded-xl bg-primary text-white font-bold text-lg flex items-center justify-center shadow-lg shadow-primary/30 active:scale-[0.98] transition-transform pointer-events-auto"
-          style={{ width: '100%', padding: '16px', borderRadius: '12px', backgroundColor: 'var(--color-primary)', color: 'white', fontWeight: 'bold', fontSize: '1.125rem', display: 'flex', alignItems: 'center', justifyContent: 'center', border: 'none', boxShadow: '0 10px 15px -3px rgba(4, 167, 108, 0.3)', pointerEvents: 'auto' }}
+          style={{ width: '100%', padding: '16px', borderRadius: '12px', backgroundColor: 'var(--color-primary)', color: 'white', fontWeight: 'bold', fontSize: '1.125rem', display: 'flex', alignItems: 'center', justifyContent: 'center', border: 'none', boxShadow: '0 10px 15px -3px rgba(47, 128, 255, 0.3)', pointerEvents: 'auto' }}
         >
           <Plus size={24} className="mr-2" style={{ marginRight: '8px' }} />
           Tạo tuyến mới

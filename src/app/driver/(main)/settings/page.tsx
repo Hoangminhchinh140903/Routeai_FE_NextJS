@@ -20,13 +20,13 @@ export default function SettingsPage() {
         
         {/* Profile Card */}
         <div onClick={() => router.push('/driver/profile')} className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm flex items-center active:bg-gray-50 cursor-pointer transition-colors" style={{ backgroundColor: 'white', borderRadius: '16px', padding: '20px', border: '1px solid #f3f4f6', boxShadow: '0 1px 2px rgba(0,0,0,0.05)', display: 'flex', alignItems: 'center' }}>
-          <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center overflow-hidden mr-4 border-2 border-primary/20" style={{ width: '64px', height: '64px', backgroundColor: '#e5e7eb', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', marginRight: '16px', border: '2px solid rgba(4, 167, 108, 0.2)' }}>
+          <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center overflow-hidden mr-4 border-2 border-primary/20" style={{ width: '64px', height: '64px', backgroundColor: '#e5e7eb', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', marginRight: '16px', border: '2px solid rgba(47, 128, 255, 0.2)' }}>
             <User size={32} className="text-gray-400 mt-2" style={{ color: '#9ca3af', marginTop: '8px' }} />
           </div>
           <div className="flex-1" style={{ flex: 1 }}>
             <h2 className="text-xl font-bold text-gray-800 mb-1" style={{ fontSize: '1.25rem', fontWeight: 'bold', color: '#1f2937', marginBottom: '4px' }}>{userName}</h2>
             <div className="flex items-center" style={{ display: 'flex', alignItems: 'center' }}>
-              <span className="bg-primary/10 text-primary text-xs font-bold px-2 py-0.5 rounded flex items-center" style={{ backgroundColor: 'rgba(4, 167, 108, 0.1)', color: 'var(--color-primary)', fontSize: '0.75rem', fontWeight: 'bold', padding: '2px 8px', borderRadius: '4px', display: 'flex', alignItems: 'center' }}>
+              <span className="bg-primary/10 text-primary text-xs font-bold px-2 py-0.5 rounded flex items-center" style={{ backgroundColor: 'rgba(47, 128, 255, 0.1)', color: 'var(--color-primary)', fontSize: '0.75rem', fontWeight: 'bold', padding: '2px 8px', borderRadius: '4px', display: 'flex', alignItems: 'center' }}>
                 <Crown size={12} className="mr-1" style={{ marginRight: '4px' }} />
                 Tài khoản Pro
               </span>
@@ -38,14 +38,14 @@ export default function SettingsPage() {
         {/* Current Plan */}
         <div>
           <h3 className="font-bold text-gray-800 text-base mb-3 ml-1" style={{ fontWeight: 'bold', color: '#1f2937', fontSize: '1rem', marginBottom: '12px', marginLeft: '4px' }}>Gói cước hiện tại</h3>
-          <div className="bg-gradient-to-br from-primary to-teal-500 rounded-2xl p-5 shadow-lg shadow-primary/20 text-white" style={{ background: 'linear-gradient(to bottom right, var(--color-primary), #14b8a6)', borderRadius: '16px', padding: '20px', boxShadow: '0 10px 15px -3px rgba(4, 167, 108, 0.2)', color: 'white' }}>
+          <div className="bg-gradient-to-br from-primary to-teal-500 rounded-2xl p-5 shadow-lg shadow-primary/20 text-white" style={{ background: 'linear-gradient(to bottom right, var(--color-primary), #0B1F3B)', borderRadius: '16px', padding: '20px', boxShadow: '0 10px 15px -3px rgba(47, 128, 255, 0.2)', color: 'white' }}>
             <div className="flex justify-between items-start mb-4" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '16px' }}>
               <div>
                 <div className="flex items-center text-white/80 text-sm font-medium mb-1" style={{ display: 'flex', alignItems: 'center', color: 'rgba(255,255,255,0.8)', fontSize: '0.875rem', fontWeight: 500, marginBottom: '4px' }}>
                   <Crown size={16} className="mr-1.5" style={{ marginRight: '6px' }} />
                   Gói Cao Cấp
                 </div>
-                <h4 className="text-2xl font-bold" style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>RouteAI Pro</h4>
+                <h4 className="text-2xl font-bold" style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>R:t Pro</h4>
               </div>
               <div className="bg-white/20 px-3 py-1 rounded-full text-sm font-bold backdrop-blur-sm" style={{ backgroundColor: 'rgba(255,255,255,0.2)', padding: '4px 12px', borderRadius: '999px', fontSize: '0.875rem', fontWeight: 'bold', backdropFilter: 'blur(4px)' }}>
                 Đang hoạt động

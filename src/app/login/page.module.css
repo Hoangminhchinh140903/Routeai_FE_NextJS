@@ -4,23 +4,36 @@
   align-items: center;
   justify-content: center;
   background-color: var(--color-bg-app);
+  background-image: radial-gradient(circle, rgba(47, 128, 255, 0.08) 2px, transparent 2.5px);
+  background-size: 28px 28px;
   font-family: var(--font-family-base);
+  padding: 1rem;
 }
 
 .card {
   background-color: var(--color-bg-surface);
-  border-radius: 12px;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -5px rgba(11, 31, 59, 0.12), 0 8px 10px -6px rgba(11, 31, 59, 0.08);
   padding: 2.5rem;
   width: 100%;
   max-width: 420px;
   border: 1px solid var(--color-border);
 }
 
+.logoWrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.logo {
+  height: auto;
+}
+
 .title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--color-text-main);
+  color: var(--color-navy);
   margin-bottom: 0.5rem;
   text-align: center;
 }
@@ -39,7 +52,7 @@
 .label {
   display: block;
   font-weight: 500;
-  color: var(--color-text-main);
+  color: var(--color-navy);
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
 }
@@ -108,4 +121,14 @@
 
 .link:hover {
   text-decoration: underline;
+}
+
+.tagline {
+  margin-top: 1.25rem;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--color-navy);
+  opacity: 0.65;
 }

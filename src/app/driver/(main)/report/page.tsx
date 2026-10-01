@@ -96,7 +96,7 @@ export default function DailyReportPage() {
               { label: '20h', h: '20%' },
             ].map((bar, i) => (
               <div key={i} className="flex flex-col items-center gap-3" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px', width: '24px' }}>
-                <div className="w-5 bg-primary/20 rounded-t-sm" style={{ width: '20px', height: '120px', backgroundColor: 'rgba(4, 167, 108, 0.1)', borderTopLeftRadius: '4px', borderTopRightRadius: '4px', position: 'relative', display: 'flex', alignItems: 'flex-end' }}>
+                <div className="w-5 bg-primary/20 rounded-t-sm" style={{ width: '20px', height: '120px', backgroundColor: 'rgba(47, 128, 255, 0.1)', borderTopLeftRadius: '4px', borderTopRightRadius: '4px', position: 'relative', display: 'flex', alignItems: 'flex-end' }}>
                   <div className="w-full bg-primary rounded-t-sm" style={{ width: '100%', height: bar.h, backgroundColor: 'var(--color-primary)', borderTopLeftRadius: '4px', borderTopRightRadius: '4px' }}></div>
                 </div>
                 <span className="text-xs text-gray-400" style={{ fontSize: '0.75rem', color: '#9ca3af' }}>{bar.label}</span>

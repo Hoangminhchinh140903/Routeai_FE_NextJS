@@ -56,7 +56,7 @@ export default function DeliveryStatusPage() {
           <button 
             onClick={handleSuccess}
             className="w-full py-4 rounded-xl bg-primary text-white font-bold text-lg shadow-lg shadow-primary/30 active:scale-[0.98] transition-transform"
-            style={{ width: '100%', padding: '16px', borderRadius: '12px', backgroundColor: 'var(--color-primary)', color: 'white', fontWeight: 'bold', fontSize: '1.125rem', border: 'none', boxShadow: '0 10px 15px -3px rgba(4, 167, 108, 0.3)' }}
+            style={{ width: '100%', padding: '16px', borderRadius: '12px', backgroundColor: 'var(--color-primary)', color: 'white', fontWeight: 'bold', fontSize: '1.125rem', border: 'none', boxShadow: '0 10px 15px -3px rgba(47, 128, 255, 0.3)' }}
           >
             Đã giao thành công
           </button>

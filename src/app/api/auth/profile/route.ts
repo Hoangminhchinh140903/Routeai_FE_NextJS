@@ -13,14 +13,21 @@ export async function GET(request: Request) {
 
   const token = authHeader.replace('Bearer ', '');
   const userId = token.replace('mock_access_token_', '');
-  
+
   const user = mockUsers.find(u => u.id === userId);
 
   if (!user) {
-    return NextResponse.json(
-      { success: false, error: { code: 'UNAUTHORIZED', message: 'Invalid token' } },
-      { status: 401 }
-    );
+    // Mock mode: token unknown (e.g. server restarted) — return a fallback user
+    return NextResponse.json({
+      success: true,
+      data: {
+        id: userId || 'mock-user-guest',
+        email: 'guest@r-t.io',
+        full_name: 'Tài xế R:t',
+        role: 'driver',
+        language_pref: 'vi',
+      },
+    });
   }
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars

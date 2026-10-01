@@ -1,15 +1,17 @@
 :root {
-  /* RouteAI Brand Colors */
-  --color-primary: #04a76c;
-  --color-primary-hover: #038d5a;
-  --color-primary-light: #e6f6f0;
+  /* R:t Brand Colors — Deep Navy / Route Blue / Clean Light */
+  --color-navy: #0B1F3B;
+  --color-navy-hover: #142E52;
+  --color-primary: #2F80FF;
+  --color-primary-hover: #1A66E8;
+  --color-primary-light: #E8F0FE;
   
-  --color-secondary: #2563eb;
+  --color-secondary: #0B1F3B;
   
   /* Background Colors */
-  --color-bg-app: #f9fafb;
-  --color-bg-surface: #ffffff;
-  --color-bg-sidebar: #0f172a;
+  --color-bg-app: #F4F7FC;
+  --color-bg-surface: #FFFFFF;
+  --color-bg-sidebar: #0B1F3B;
   
   /* Text Colors */
   --color-text-main: #111827;
@@ -21,7 +23,7 @@
   --color-success: #10b981;
   --color-warning: #f59e0b;
   --color-danger: #ef4444;
-  --color-info: #3b82f6;
+  --color-info: #2F80FF;
 
   /* Borders */
   --color-border: #e5e7eb;
@@ -218,3 +220,19 @@ button {
 /* Flex utilities */
 .flex-1 { flex: 1; }
 .shrink-0 { flex-shrink: 0; }
+
+/* R:t Brand Pattern — GPS Route Node (dotted route line) */
+.brand-pattern {
+  background-image: radial-gradient(circle, rgba(47, 128, 255, 0.18) 2px, transparent 2.5px);
+  background-size: 28px 28px;
+}
+
+.brand-pattern-navy {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.12) 2px, transparent 2.5px);
+  background-size: 28px 28px;
+}
+
+/* R:t Brand Gradient — Deep Navy to Route Blue */
+.brand-gradient {
+  background: linear-gradient(135deg, #0B1F3B 0%, #2F80FF 100%);
+}

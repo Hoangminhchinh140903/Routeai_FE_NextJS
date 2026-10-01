@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { useAuth } from '@/contexts/AuthContext';
 import styles from '../login/page.module.css'; // Reusing the same nice styles
 import Link from 'next/link';
-import { UserPlus } from 'lucide-react';
+import Image from 'next/image';
 
 export default function RegisterPage() {
   const { register } = useAuth();
@@ -34,19 +34,24 @@ export default function RegisterPage() {
   return (
     <div className={styles.container}>
       <div className={styles.card}>
-        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1rem' }}>
-          <div style={{ backgroundColor: 'var(--color-primary-light)', padding: '12px', borderRadius: '50%' }}>
-             <UserPlus color="var(--color-primary)" size={28} />
-          </div>
+        <div className={styles.logoWrap}>
+          <Image
+            src="/brand/logo.svg"
+            alt="R:t — Smarter Routes. Faster Deliveries."
+            width={148}
+            height={89}
+            priority
+            className={styles.logo}
+          />
         </div>
-        <h1 className={styles.title}>Create Account</h1>
-        <p className={styles.subtitle}>Join RouteAI to optimize your routes</p>
+        <h1 className={styles.title}>Tạo tài khoản</h1>
+        <p className={styles.subtitle}>Tham gia R:t để tối ưu mọi tuyến đường</p>
         
         {error && <div className={styles.errorAlert}>{error}</div>}
         
         <form onSubmit={handleSubmit}>
           <div className={styles.formGroup}>
-            <label htmlFor="fullName" className={styles.label}>Full Name</label>
+            <label htmlFor="fullName" className={styles.label}>Họ và tên</label>
             <input
               id="fullName"
               type="text"
@@ -54,12 +59,12 @@ export default function RegisterPage() {
               value={fullName}
               onChange={(e) => setFullName(e.target.value)}
               required
-              placeholder="Jane Doe"
+              placeholder="Nguyễn Văn A"
             />
           </div>
 
           <div className={styles.formGroup}>
-            <label htmlFor="email" className={styles.label}>Email Address</label>
+            <label htmlFor="email" className={styles.label}>Địa chỉ email</label>
             <input
               id="email"
               type="email"
@@ -67,12 +72,12 @@ export default function RegisterPage() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              placeholder="you@example.com"
+              placeholder="ban@r-t.io"
             />
           </div>
           
           <div className={styles.formGroup}>
-            <label htmlFor="password" className={styles.label}>Password</label>
+            <label htmlFor="password" className={styles.label}>Mật khẩu</label>
             <input
               id="password"
               type="password"
@@ -86,13 +91,14 @@ export default function RegisterPage() {
           </div>
           
           <button type="submit" className={styles.button} disabled={loading}>
-            {loading ? 'Creating account...' : 'Create Account'}
+            {loading ? 'Đang tạo tài khoản...' : 'Tạo tài khoản'}
           </button>
         </form>
         
         <div className={styles.footer}>
-          Already have an account? <Link href="/login" className={styles.link}>Sign in here</Link>
+          Đã có tài khoản? <Link href="/login" className={styles.link}>Đăng nhập</Link>
         </div>
+        <div className={styles.tagline}>Đúng tuyến. Đúng thời gian. Cùng R:t.</div>
       </div>
     </div>
   );

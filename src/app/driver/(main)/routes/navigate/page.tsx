@@ -49,15 +49,15 @@ export default function NavigatePage() {
             <Navigation size={24} fill="var(--color-primary)" className="text-primary" style={{ color: 'var(--color-primary)' }} />
           </div>
           {/* Ping effect */}
-          <div className="w-24 h-24 bg-primary/20 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-ping -z-10" style={{ width: '96px', height: '96px', backgroundColor: 'rgba(4, 167, 108, 0.2)', borderRadius: '50%', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', animation: 'ping 2.5s cubic-bezier(0, 0, 0.2, 1) infinite', zIndex: -1 }}></div>
+          <div className="w-24 h-24 bg-primary/20 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-ping -z-10" style={{ width: '96px', height: '96px', backgroundColor: 'rgba(47, 128, 255, 0.2)', borderRadius: '50%', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', animation: 'ping 2.5s cubic-bezier(0, 0, 0.2, 1) infinite', zIndex: -1 }}></div>
         </div>
 
         {/* Next Point Marker */}
         <div className="absolute" style={{ left: 100, top: 50, transform: 'translate(-50%, -100%)', zIndex: 10 }}>
-           <div className="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold shadow-lg border-2 border-white" style={{ width: '32px', height: '32px', borderRadius: '50%', backgroundColor: '#2563eb', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)', border: '2px solid white' }}>
+           <div className="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold shadow-lg border-2 border-white" style={{ width: '32px', height: '32px', borderRadius: '50%', backgroundColor: '#2F80FF', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)', border: '2px solid white' }}>
             1
           </div>
-          <div className="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[8px] border-t-blue-600 mx-auto" style={{ width: 0, height: 0, borderLeft: '6px solid transparent', borderRight: '6px solid transparent', borderTop: '8px solid #2563eb', margin: '0 auto', marginTop: '-2px' }}></div>
+          <div className="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[8px] border-t-blue-600 mx-auto" style={{ width: 0, height: 0, borderLeft: '6px solid transparent', borderRight: '6px solid transparent', borderTop: '8px solid #2F80FF', margin: '0 auto', marginTop: '-2px' }}></div>
         </div>
 
         {/* Floating Actions Right */}
@@ -72,7 +72,7 @@ export default function NavigatePage() {
 
         {/* Floating Action Delivery Status */}
         <div className="absolute right-4 bottom-8 z-20" style={{ position: 'absolute', right: '16px', bottom: '32px', zIndex: 20 }}>
-          <button onClick={() => router.push('/driver/routes/delivery')} className="w-16 h-16 bg-primary rounded-full shadow-lg flex items-center justify-center text-white relative" style={{ width: '64px', height: '64px', backgroundColor: 'var(--color-primary)', borderRadius: '50%', boxShadow: '0 10px 15px -3px rgba(4, 167, 108, 0.4)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', position: 'relative' }}>
+          <button onClick={() => router.push('/driver/routes/delivery')} className="w-16 h-16 bg-primary rounded-full shadow-lg flex items-center justify-center text-white relative" style={{ width: '64px', height: '64px', backgroundColor: 'var(--color-primary)', borderRadius: '50%', boxShadow: '0 10px 15px -3px rgba(47, 128, 255, 0.4)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', position: 'relative' }}>
             <PackageCheck size={32} />
             <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center border-2 border-white" style={{ position: 'absolute', top: '-8px', right: '-8px', backgroundColor: '#ef4444', color: 'white', fontSize: '12px', fontWeight: 'bold', width: '24px', height: '24px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '2px solid white' }}>1</span>
           </button>

@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { useAuth } from '@/contexts/AuthContext';
 import styles from './page.module.css';
 import Link from 'next/link';
-import { LogIn } from 'lucide-react';
+import Image from 'next/image';
 
 export default function LoginPage() {
   const { login } = useAuth();
@@ -33,19 +33,24 @@ export default function LoginPage() {
   return (
     <div className={styles.container}>
       <div className={styles.card}>
-        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1rem' }}>
-          <div style={{ backgroundColor: 'var(--color-primary-light)', padding: '12px', borderRadius: '50%' }}>
-             <LogIn color="var(--color-primary)" size={28} />
-          </div>
+        <div className={styles.logoWrap}>
+          <Image
+            src="/brand/logo.svg"
+            alt="R:t — Smarter Routes. Faster Deliveries."
+            width={148}
+            height={89}
+            priority
+            className={styles.logo}
+          />
         </div>
-        <h1 className={styles.title}>Welcome Back</h1>
-        <p className={styles.subtitle}>Sign in to access your RouteAI dashboard</p>
+        <h1 className={styles.title}>Chào mừng trở lại</h1>
+        <p className={styles.subtitle}>Đăng nhập để bắt đầu tuyến đường tối ưu của bạn</p>
         
         {error && <div className={styles.errorAlert}>{error}</div>}
         
         <form onSubmit={handleSubmit}>
           <div className={styles.formGroup}>
-            <label htmlFor="email" className={styles.label}>Email Address</label>
+            <label htmlFor="email" className={styles.label}>Địa chỉ email</label>
             <input
               id="email"
               type="email"
@@ -53,12 +58,12 @@ export default function LoginPage() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              placeholder="you@example.com"
+              placeholder="ban@r-t.io"
             />
           </div>
           
           <div className={styles.formGroup}>
-            <label htmlFor="password" className={styles.label}>Password</label>
+            <label htmlFor="password" className={styles.label}>Mật khẩu</label>
             <input
               id="password"
               type="password"
@@ -71,13 +76,14 @@ export default function LoginPage() {
           </div>
           
           <button type="submit" className={styles.button} disabled={loading}>
-            {loading ? 'Signing in...' : 'Sign In'}
+            {loading ? 'Đang đăng nhập...' : 'Đăng nhập'}
           </button>
         </form>
         
         <div className={styles.footer}>
-          Don&apos;t have an account? <Link href="/register" className={styles.link}>Register here</Link>
+          Chưa có tài khoản? <Link href="/register" className={styles.link}>Đăng ký ngay</Link>
         </div>
+        <div className={styles.tagline}>Đúng tuyến. Đúng thời gian. Cùng R:t.</div>
       </div>
     </div>
   );

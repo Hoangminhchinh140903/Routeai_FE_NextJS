@@ -9,8 +9,6 @@ import {
   CheckCircle2, 
   Building2, 
   Send, 
-  ShieldCheck,
-  Zap,
   Smartphone
 } from 'lucide-react';
 import Link from 'next/link';
@@ -19,7 +17,7 @@ function CheckoutContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
 
-  const id = searchParams.get('id') || `int_${Date.now()}`;
+  const id = searchParams.get('id') || 'int_sim_checkout';
   const amount = searchParams.get('amount') || '199.00';
   const currency = searchParams.get('currency') || 'CAD';
   const desc = searchParams.get('desc') || 'RouteAI Enterprise Subscription';

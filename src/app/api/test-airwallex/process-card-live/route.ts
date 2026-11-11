@@ -4,7 +4,7 @@ import { airwallexService } from '@/services/airwallex/client';
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { amount, currency, cardNumber, expiry, cvc, cardHolder, planName } = body;
+    const { amount, currency, cardNumber, cardHolder, planName } = body;
 
     const token = await airwallexService.getAccessToken();
     const amt = Number(amount) || 1.00;
